@@ -1,0 +1,124 @@
+body {
+    background: url(img/accounting-bill-black-53621.jpg);
+    background-size: 100%;
+    background-attachment: fixed;
+}
+
+h1 {
+    width: auto;
+    height: auto;
+    color: white;
+    background: black;
+    text-align: center;
+    line-height: 70px;
+}
+
+.cuerpo {
+    width: 300px;
+    height: 460px;
+    border: 1px solid black;
+    margin: auto;
+    position: relative;
+    background: black;
+}
+
+.marca {
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    height: 25px;
+    line-height: 25px;
+}
+
+.pantalla {
+    width: 280px;
+    height: 100px;
+    border: 1px solid red;
+    margin: auto;
+    margin-top: 10px;
+}
+
+.resultados {
+    width: 275px;
+    height: 95px;
+}
+
+.numeros {
+    margin-top: 20px;
+    margin-left: 10px;
+    width: 150px;
+    height: 250px;
+    border: 1px solid green;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.unidad {
+    width: 40px;
+    height: 40px;
+    border: 1px solid green;
+    margin: 4px;
+    text-align: center;
+    line-height: 40px;
+    background: white;
+}
+
+.unidad:nth-child(12){
+    background: red;
+}
+
+.unidad:hover{
+    background: yellow;
+}
+
+.unidad:active {
+    transform: scale(0.9);
+}
+
+.operadores {
+    width: 100px;
+    height: 250px;
+    border: 1px solid red;
+    display: flex;
+    flex-wrap: wrap;
+    position: absolute;
+    left: 185px;
+    top: 163px;
+}
+
+.simbolos {
+    width: 40px;
+    height: 40px;
+    border: 1px solid red;
+    margin: 4px;
+    background: white;
+    text-align: center;
+    line-height: 40px;
+}
+
+.simbolos:hover {
+    background: yellow;
+}
+
+.simbolos:active {
+    transform: scale(0.9);
+}
+
+h2 {
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.simbolos:nth-child(7){
+    width: 90px;
+}
+
+@media screen and (max-width: 700px){
+    body {
+        background: url(img/accounting-bill-black-53621celular.jpg);
+        background-size: 100%;
+        background-attachment: fixed;
+    }
+}
