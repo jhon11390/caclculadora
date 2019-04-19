@@ -60,8 +60,16 @@ function resultadototal(){
             document.querySelector('.resultados').innerHTML = "";
             document.querySelector('.resultados').append(total);
         } else if(element == '%'){
-            document.querySelector('.resultados').innerHTML = "";
-            document.querySelector('.resultados').append('DISABLED');
+            numerosparaoperar.forEach(element => {
+                if(element == 'x'){
+                    let dato1 = parseInt(numerosparaoperar[numerosparaoperar.indexOf(element)-1]);
+                    let dato2 = parseInt(numerosparaoperar[numerosparaoperar.length-2]);
+                    let total = dato1 * dato2/100;
+                    console.log(dato2);
+                    document.querySelector('.resultados').innerHTML = "";
+                    document.querySelector('.resultados').append(total);
+                }
+            });
         }
     });
 }
